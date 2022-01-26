@@ -20,7 +20,7 @@ About, Cayegory, Pages, Contact Us, etc.
 This website provide every single update 
 in this technical world to the user.
 
-### Website Sample: Geekboots - Heavens for Programmers
+### Website Sample: [Geekboots - Heavens for Programmers](https://white-bush-0be032410.1.azurestaticapps.net/)
 
 **Note:** Used Lorem Ipsum content for sample website.
 
