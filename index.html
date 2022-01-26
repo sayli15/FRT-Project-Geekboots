@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>geekboots - Heaven for Programmers</title>
+    <link rel = "icon" href = "./assets/logo.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="./css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="./css/Style.css">
+
+</head>
+
+<body>   
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">geekboots</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#homepage">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about1">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#category">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#newsletter">Contact</a>
+                    </li>
+                    <li class="nav-link but">
+                        <a  class="but" onclick="document.getElementById('id01').style.display='block'"
+                        style="font-size: 1.1rem; 
+                        font-family: var(--Lexend);
+                        position: relative; 
+                        padding:  1.6rem 0rem;
+                        cursor: pointer;">Login</a>
+  
+                    <div id="id01" class="modal">
+                  
+                        <form class="modal-content animate" action="#">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">×</span>
+                                <img src="./assets/avatar.png" alt="Avatar" class="avatar">
+                            </div>
+                  
+                            <div class="container1">
+                                <label>Username</label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                <br>
+                  
+                                <label>Password&nbsp;</label>
+                                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                  
+                                <input type="checkbox" checked="checked"> Remember me 
+                                <br> <br>
+                                <button type="submit">Login</button>
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            </div>
+                            <div class="container1"><span class="acc">Don't have account? &nbsp; <a href="#">sign up</a></span>
+                            <span class="psw">Forgot &nbsp; <a href="#">password?</a></span></div>
+                        </form>
+                    </div>                 
+                    <script>
+                        var modal = document.getElementById('id01');
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                    </li>
+
+                    <li class="nav-link but">
+                        <a  class="but" onclick="document.getElementById('id02').style.display='block'"
+                        style="font-size: 1.1rem; 
+                        font-family: var(--Lexend);
+                        position: relative; 
+                        padding:  1.6rem 0rem;
+                        cursor: pointer;">Sign Up</a>
+  
+                    <div id="id02" class="modal">
+                  
+                        <form class="modal-content animate" action="#">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">×</span>
+                                <img src="./assets/avatar.png" alt="Avatar" class="avatar">
+                            </div>
+                  
+                            <div class="container1">
+                                <label>Email id&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="email" placeholder="Enter email id" name="uname" required> <br>
+                                <label>Username</label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+                                <br>
+                  
+                                <label>Password&nbsp;</label>
+                                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                            
+                                <input type="checkbox" checked="checked" required> I accept the <a>Terms & Privacy Policy</a> 
+                                <br> <br>
+                                <button type="submit">Sign up</button>
+                                <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                            </div>
+                        </form>
+                    </div>                 
+                    <script>
+                        var modal = document.getElementById('id02');
+                        window.onclick = function(event) {
+                            if (event.target == modal) {
+                                modal.style.display = "none";
+                            }
+                        }
+                    </script>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+
+
+    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+  
+    <!----------------------------- Main Site Section ------------------------------>
+
+    <main>
+
+        <!------------------------ Site Title ---------------------->
+
+        <section class="site-title">
+            <div class="site-background" id="homepage" data-aos="fade-up" data-aos-delay="100">
+                <h1>Welcome to geekboots</h1>
+                <!-- <p>Technology News, Development and Trends</p> -->
+                <br> <br>
+                    <button class="btn btn-danger">Technology</button>
+                    <button class="btn btn-primary">Development</button>
+                    <button class="btn btn-success">Tech Fun</button>
+                  
+            </div>
+        </section>
+
+        <!------------x----------- Site Title ----------x----------->
+
+        <!-- --------------------- Blog Carousel ----------------- -->
+
+        <section>
+            <div class="blog">
+                <div class="container">
+                    <div class="owl-carousel owl-theme blog-post">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/frontend.png" alt="frontend" height="202">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <button class="btn btn-blog">Frontend</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
+                            <img src="./assets/backend.png" alt="backend" height="202">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <button class="btn btn-blog">Backend</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
+                            <img src="./assets/gtc4.png" alt="gtc4" height="202">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <button class="btn btn-blog">Global Technology Conference</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                            <img src="./assets/cp.png" alt="cp" height="202">
+                            <div class="blog-title">
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                                <button class="btn btn-blog">DSA</button>
+                                <span>2 minutes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-navigation">
+                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
+                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ----------x---------- Blog Carousel --------x-------- -->
+
+        <!-- ---------------------- Site Content -------------------------->
+
+        <section class="container">
+            <div class="site-content">
+                <div class="posts">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/A/a1.png" class="img" alt="a1">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Aug 20, 2021</span>
+                                <span>15 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde!
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/A/a2.png" class="img" alt="a2">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Alen</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Oct 16, 2021</span>
+                                <span>13 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde!
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/A/a3.png" class="img" alt="a3">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;John</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Dec 05, 2021</span>
+                                <span>17 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde!
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="post-image">
+                            <div>
+                                <img src="./assets/A/a4.png" class="img" alt="a4">
+                            </div>
+                            <div class="post-info flex-row">
+                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Jan 12, 2022</span>
+                                <span>20 Commets</span>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
+                                adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
+                                nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
+                                illum similique veniam tempore unde!
+                            </p>
+                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="pagination flex-row" id="pages">
+                        <a href="#"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="pages">1</a>
+                        <a href="#" class="pages">2</a>
+                        <a href="#" class="pages">3</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </div>
+                <aside class="sidebar">
+                    <div class="category" id="category">
+                        <h2>Category</h2>
+                        <ul class="category-list">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
+                                <a href="#">Software</a>
+                                <span>(05)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
+                                <a href="#">Techonlogy</a>
+                                <span>(09)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
+                                <a href="#">Development</a>
+                                <span>(04)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
+                                <a href="#">Trends</a>
+                                <span>(07)</span>
+                            </li>
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
+                                <a href="#">Tech-fun</a>
+                                <span>(08)</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/B/b1.png" class="img" alt="b1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Aug 15, 2021</span>
+                                    <span>7 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/B/b2.png" class="img" alt="b2">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Nov 01, 2021</span>
+                                    <span>12 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/B/b3.png" class="img" alt="b3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Dec 28, 2021</span>
+                                    <span>5 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/B/b4.png" class="img" alt="b4">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Jan 07, 2022</span>
+                                    <span>19 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/B/b5.png" class="img" alt="b5">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Jan 15, 2022</span>
+                                    <span>10 Commets</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" id="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>For more updates</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email">
+                            <button class="btn form-btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="popular-tags">
+                        <h2>Popular Tags</h2>
+                        <div class="tags flex-row">
+                            <span class="tag" data-aos="flip-up" data-aos-delay="100">software</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="300">trend</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="500">design</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="600">development</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="700">tech fun</span>
+                            <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- -----------x---------- Site Content -------------x------------>
+
+    </main>
+
+    <!---------------x------------- Main Site Section ---------------x-------------->
+
+
+    <!-- --------------------------- Footer ---------------------------------------- -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" id="about1" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Subscribe</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Recommended</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div class="social text-gray">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/sayli15"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sayali-selukar-0742a71a5/"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2022 All rights reserved | made by
+                <a target="_black">Sayali Selukar</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+
+    <!-- -------------x------------- Footer --------------------x------------------- -->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.4.1.min.js"></script>
+
+    <!-- --------- Owl-Carousel js ------------------->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ------------ AOS js Library  ------------------------- -->
+    <script src="./js/aos.js"></script>
+
+    <!-- Custom Javascript file -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
