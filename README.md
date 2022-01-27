@@ -16,7 +16,7 @@ It allows the users to have a look on layout of
 the website having different features.
 Any user (Programmer) can have a look on different 
 features of layout of the webiste like Home, 
-About, Cayegory, Pages, Contact Us, etc.  
+About, Category, Pages, Contact Us, etc.  
 This website provide every single update 
 in this technical world to the user.
 
